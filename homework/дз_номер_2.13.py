@@ -9,4 +9,5 @@ if 100 <= number <= 999:
 reversed_number = digit3 * 100 + digit2 * 10 + digit1
 
 print(f"Число справа налево: {reversed_number}")
+#buwhguilbwhtlubhwbu
 
