@@ -177,7 +177,7 @@ if what_user_want == 2:
 
 def average_film_duratin(films):
     if len(films) == 0:
-        print("Нет фильмов дл ярасчета средней длительности.")
+        print("Нет фильмов для расчета средней длительности.")
 
         return
 
@@ -205,7 +205,7 @@ if what_user_want == 3:
 
 def top_3_by_raiting(films):
     if len(felms) == 0:
-        print("Нет фильмов дл яотображения.")
+        print("Нет фильмов для отображения.")
 
         return
 
@@ -217,7 +217,7 @@ def top_3_by_raiting(films):
 
     print(f"Рейтинг основан на оценке от 0.0 до 10.0\n")
 
-    for i in range(count):
+    for i in range(coun):
         film = sorted_films[i]
         print(f"{i+1}. {film.name}")
         print(f"Рейтинг:{film.rating}")
@@ -241,12 +241,12 @@ if what_user_want == 4:
 def increase_price_for_old_films(films):
 
     if len(films) == 0:
-        print("Нет фильмов дл яобработки.")
+        print("Нет фильмов для обработки.")
 
         return
 
     os.system('cls')
-    print("Увеличение цены дл яфильмов до 2000 года\n" + "=" * 50)
+    print("Увеличение цены для фильмов до 2000 года\n" + "=" * 50)
 
     print("Введите процент увеличения цены(пример: 10б 25б 40):")
     try:
@@ -284,16 +284,16 @@ def increase_price_for_old_films(films):
         
         print(f"Общая сумма увеличения: + {int(total_increase)} рублей.")
     else:
-        print("\nНет фильмовб выпущенных до 2000 года.")
+        print("\nНет фильмов, выпущенных до 2000 года.")
 
     print("\n" + "=" * 50)
-    print("ВСЕ ФИЛЬМФ С ЦЕНАМИ:")
+    print("ВСЕ ФИЛЬМЫ С ЦЕНАМИ:")
     for film in films:
         year_status = "(до 2000 года.)" if film.release < 2000 else "(после 2000 года.)"
         print(f" - {film.name}({film.release} г.) {year_status}: {film.price} рублей.")
 
     print("\n" + "=" * 50)
-    input("\nНажмите Tnter для возврата в меню...")
+    input("\nНажмите Enter для возврата в меню...")
 
 if what_user_want == 5:
     increase_price_for_old_films(films)
