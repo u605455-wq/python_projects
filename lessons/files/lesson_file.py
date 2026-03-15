@@ -14,5 +14,5 @@ count_simbols = len(file_data)
 file.close()
 
 print(f"Количество символов - {count_simbols}")
-#trtrtrtrtr
+
 
