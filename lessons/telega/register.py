@@ -1,7 +1,7 @@
 # 8282466054:AAG0pE5Q3bChFq0I85R4tlwbgfw4YjmHLs0
 
 # @test_register_hakaton_bot
-
+ 
 
 import telebot
 from telebot import custom_filters, types
