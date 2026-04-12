@@ -85,6 +85,8 @@ def message_text_all_handler(message: telebot.types.Message):
         output_text = str(datetime.now())
     elif input_text == "как тебя зовут":
         output_text = "Я бот 111"
+    elif input_text == "как дела":
+        output_text = "всё нормули"
     else:
         output_text = "неизвестное сообщение"
 
