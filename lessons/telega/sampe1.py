@@ -94,4 +94,3 @@ def message_text_all_handler(message: telebot.types.Message):
 
 
 bot.infinity_polling()
-# print("бот запущен")
